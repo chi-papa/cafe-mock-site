@@ -1,414 +1,728 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+  <head>
     <!--//////////////////////////////////////////// meta ////////////////////////////////////////////////-->
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="犬好きによる犬好きの為のカフェ、コーヒー好きのコーヒー好きの為のカフェ、有名なカフェインレスコーヒーのお店店">
-    <meta name="keywords" content="犬,犬カフェ,コーヒー,カフェ,カフェインレス,ケーキ,スイーツ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="犬好きによる犬好きの為のカフェ、コーヒー好きのコーヒー好きの為のカフェ、有名なカフェインレスコーヒーのお店店"
+    />
+    <meta
+      name="keywords"
+      content="犬,犬カフェ,コーヒー,カフェ,カフェインレス,ケーキ,スイーツ"
+    />
 
     <!-- noindex__設定 -->
-    <meta name="robots" content="noindex,nofollow">
-    <meta property="og:title" content="inutocafe">
-    <meta property="og:type" content="website">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:title" content="inutocafe" />
+    <meta property="og:type" content="website" />
     <!-- <meta property="og:url" content="http://4ncafe.com"> -->
     <!-- <meta property="og:image" content="http://4ncafe.com"> -->
     <title>犬と珈琲</title>
     <!--//////////////////////////////////////////// リセットCSS ////////////////////////////////////////////-->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <!--///////////////////////////////////////////// カスタム CSS //////////////////////////////////////////-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Animate CSS cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/3-2-3-1.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/3-2-3-1.css" />
 
     <!-- Tab 動作 メニュー -->
-    <link rel="stylesheet" type="text/css" href="css/5-4-1.css">
+    <link rel="stylesheet" type="text/css" href="css/5-4-1.css" />
     <!-- vegas_cdn_CSS Background SlideShow_jQuery/Zepto Plugin-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
+    />
     <!-- slideshow_css -->
-    <link rel="stylesheet" type="text/css" href="css/6-1-3.css">
+    <link rel="stylesheet" type="text/css" href="css/6-1-3.css" />
     <!-- slick_CSS jQuery/Pligin__カルーセル  2024-11-1-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/6-1-6.css">
-    
-    <!--/////////////////////////////////////////// グーグル font ////////////////////////////////////////////-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@200..900&display=swap"     rel="stylesheet">
-    <!-- 
-    .noto-serif-jp-<uniquifier> {
-      font-family: "Noto Serif JP", serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-       .m-plus-rounded-1c-regular {
-         font-family: "M PLUS Rounded 1c", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/6-1-6.css" />
 
-    } -->
-    
+    <!--/////////////////////////////////////////// グーグル font ////////////////////////////////////////////-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FULLCALENDAR JS 2021-11-1-->
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
-
-
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+  </head>
+  <body>
     <!--////////////////////////////////////////////// ヘッダー //////////////////////////////////////////////-->
     <header>
-        <section class="header__nav--sec">
-            <div class="header__container--shopname">
-                <p class="header__container--shopChara">Decaf・caffein-free専門店</p>
-                <h1 >犬と珈琲</h1>
-            </div>
-            <ul class="header__navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#menu" class="nav-link" data-jp="メニュー">Menu</a></li>
-                <li><a href="#concept" class="nav-link" data-jp="コンセプト">Concept</a></li>
-                <li><a href="#information" class="nav-link" data-jp="営業時間など">Hours & Location</a></li>
-                <li><a href="#event " class="nav-link" data-jp="イベント">Event</a></li>
-                <li><a href="#contact" class="nav-link" data-jp="お問い合わせ">Contact</a></li>
-            </ul>
-        </section>
-        <!-- ハンバーガーメニュー -->
-        <details>
-            <summary class="hamburger-menu">
-                <img src="img/icon/icon__close.png" alt="Close" class="close-icon" width="300" height="299">
-                <img src="img/icon/icon__open.png" alt="Menu" class="open-icon" width="300" height="300">
-            </summary>
-            <div class="menu-content">
-                <ul>
-                    <li><a href="index.html"data-jp="home">ホーム</a></li>
-                    <li><a href="#menu"data-jp="menu">メニュー</a></li>
-                    <li><a href="#concept"data-jp="concept">コンセプト</a></li>
-                    <li><a href="#information"data-jp="hours & location">営業時間</a></li>
-                    <li><a href="#event "data-jp="event">イベント</a></li>
-                    <li><a href="#contact"data-jp="contact">お問い合わせ</a></li>
-                </ul>
-            </div>
-        </details>
-        
-    
+      <section class="header__nav--sec">
+        <div class="header__container--shopname">
+          <p class="header__container--shopChara">Decaf・caffein-free専門店</p>
+          <h1>犬と珈琲</h1>
+        </div>
+        <ul class="header__navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#menu" class="nav-link" data-jp="メニュー">Menu</a></li>
+          <li>
+            <a href="#concept" class="nav-link" data-jp="コンセプト">Concept</a>
+          </li>
+          <li>
+            <a href="#information" class="nav-link" data-jp="営業時間など"
+              >Hours & Location</a
+            >
+          </li>
+          <li>
+            <a href="#event " class="nav-link" data-jp="イベント">Event</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-jp="お問い合わせ"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- ハンバーガーメニュー -->
+      <details>
+        <summary class="hamburger-menu">
+          <img
+            src="img/icon/icon__close.png"
+            alt="Close"
+            class="close-icon"
+            width="300"
+            height="299"
+          />
+          <img
+            src="img/icon/icon__open.png"
+            alt="Menu"
+            class="open-icon"
+            width="300"
+            height="300"
+          />
+        </summary>
+        <div class="menu-content">
+          <ul>
+            <li><a href="index.html" data-jp="home">ホーム</a></li>
+            <li><a href="#menu" data-jp="menu">メニュー</a></li>
+            <li><a href="#concept" data-jp="concept">コンセプト</a></li>
+            <li>
+              <a href="#information" data-jp="hours & location">営業時間</a>
+            </li>
+            <li><a href="#event " data-jp="event">イベント</a></li>
+            <li><a href="#contact" data-jp="contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </details>
     </header>
-<!--///////////////////////////////////////////////////////// メイ class=" box fadeUpTrigger" /////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////////////////////////// メイ class=" box fadeUpTrigger" /////////////////////////////////////////////////////////-->
 
-<main>
-    <!--///////////////////////////////////////////// トップページ メインセクション /////////////////////////////////////////////-->
-    <div class="main__sec--wrap">
+    <main>
+      <!--///////////////////////////////////////////// トップページ メインセクション /////////////////////////////////////////////-->
+      <div class="main__sec--wrap">
         <section class="main__home--sec">
-            <div id="slider"></div>
-            
-            <div class="main__home--message">
-                <!-- <h4>5月20日<br class="br-sm-on" >チワワフェスのため<br>お休みします</h4> -->
-                
-                
-            </div>
-            <div class="scroll-icon">
-                <span></span>
-            </div>
+          <div id="slider"></div>
+
+          <div class="main__home--message">
+            <!-- <h4>5月20日<br class="br-sm-on" >チワワフェスのため<br>お休みします</h4> -->
+          </div>
+          <div class="scroll-icon">
+            <span></span>
+          </div>
         </section>
-    </div>
-              
-            
+      </div>
 
-
-    <!-- //////////////////////////////////////////////メニューページ メインセクション////////////////////////////////////////////// -->
-    <section id="menu" class="main__menu--sec">
+      <!-- //////////////////////////////////////////////メニューページ メインセクション////////////////////////////////////////////// -->
+      <section id="menu" class="main__menu--sec">
         <h2 class="section__title--menu">Menu</h2>
         <!-- <div class="main__menuinnerWrap"> -->
-            <ul class="tab">
-                <li><a href="#drink">Drink</a></li>
-                <li><a href="#foods">Foods</a></li>
-                <li><a href="#dog">Dog</a></li>
-            </ul>
-            <!-- ドリンクメニュー -->
-            <div class="tab__content">
-                <div id="drink" class="area is-active">
-                    <div class="drinkwrap">
-                        <h2>Drink</h2>
-                        <div class="stamp-cupdeco"></div>
-                        <div class="menu__drink--item">
-                            <div class="item">
-                                <img src="img/drink/regullar-coffee.jpg" alt="レギュラーコーヒー - ¥400" width="1024" height="1024">
-                                <p><strong>レギュラーコーヒー</strong> <br>¥400<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/cappuccino-coffee.jpg" alt="カプチーノ - ¥450" width="1024" height="1024">
-                                <p><strong>カプチーノ</strong> <br>¥450<br>アレルギー情報: 乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/caramel-macchiato.jpg" alt="キャラメルマキアート - ¥500" width="1024" height="1024">
-                                <p><strong>キャラメルマキアート</strong> <br>¥500<br>アレルギー情報: 乳成分、大豆</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/cafe-mocha.jpg" alt="カフェモカ - ¥480" width="1024" height="1024">
-                                <p><strong>カフェモカ</strong> <br>¥480<br>アレルギー情報: 乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/coffee-float-dessert.jpg" alt="コーヒーフロート - ¥520" width="1024" height="1024">
-                                <p><strong>コーヒーフロート</strong> <br>¥520<br>アレルギー情報: 乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/matcha-latte-coffee.jpg" alt="抹茶ラテ - ¥450" width="1024" height="1024">
-                                <p><strong>抹茶ラテ</strong> <br>¥450<br>アレルギー情報: 乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/orange-juice.jpg" alt="オレンジジュース - ¥300" width="1024" height="1024">
-                                <p><strong>オレンジジュース</strong> <br>¥300<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/grapefruit-juice.jpg" alt="グレープフルーツジュース - ¥300" width="1024" height="1024">
-                                <p><strong>グレープフルーツジュース</strong> <br>¥300<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/drink/apple-juice.jpg" alt="アップルジュース - ¥300" width="1024" height="1024">
-                                <p><strong>アップルジュース</strong> <br>¥300<br>アレルギー情報: なし</p>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <!--/area--></div>
-                    <div id="foods" class="area">
-                        <div class="stamp-foodsdeco"></div>
-                        <h2>
-                            Foods
-                        </h2>
-                        <div class="menu__foods--item">
-                            <div class="item">
-                                <img src="img/foods/curry-rice.jpg" alt="カレーライス - ¥700" width="1024" height="1024">
-                                <p>カレーライス <br>¥700<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/carbonara-pasta.jpg" alt="カルボナーラ - ¥800" width="1024" height="1024">
-                                <p>カルボナーラ <br>¥800<br>アレルギー情報: 乳成分、小麦</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/bagel-sandwich.jpg" alt="ベーグルサンド - ¥600" width="2048" height="2048">
-                                <p>ベーグルサンド <br>¥600<br>アレルギー情報: 小麦</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/croissant-bread.jpg" alt="クロワッサン - ¥400" width="2048" height="2048">
-                                <p>クロワッサン <br>¥400<br>アレルギー情報: 小麦、乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/salada-roll-bread.jpg" alt="サラダロールブレッド - ¥500" width="2048" height="2048">
-                                <p>サラダロールブレッド <br>¥500<br>アレルギー情報: 小麦</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/salad-roll-bread-blue-cheese.jpg" alt="サラダロールブルーチーズブレッド - ¥550" width="2048" height="2048">
-                                <p>サラダブルーチーズブレッド <br>¥550<br>アレルギー情報: 小麦、乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/salada-roll-bread-cheese.jpg" alt="サラダロールチーズブレッド - ¥530" width="2048" height="2048">
-                                <p>サラダチーズブレッド <br>¥530<br>アレルギー情報: 小麦、乳成分</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/fruit-vegetable-salad.jpg" alt="フルーツベジタブルサラダ - ¥450" width="2048" height="2048">
-                                <p>フルーツベジタブルサラダ <br>¥450<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/foods/cheese-in-vegetable-salad.jpg" alt="チーズインサラダ - ¥480" width="2048" height="2048">
-                                <p>チーズインサラダ <br>¥480<br>アレルギー情報: 乳成分</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="dog" class="area">
-                        <h2>Dog-foods</h2>
-                        <div class="menu__dog--item">
-                            <div class="stamp-dogstampdeco"></div>
-                            <div class="item">
-                                <img src="img/dog-foods/large-pumpkin-cookie.jpg" alt="大きいかぼちゃのクッキー - ¥300" width="2048" height="2048">
-                                <p>かぼちゃのクッキーＬ <br> ¥300<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/dog-foods/medium-pumpkin-cookies.jpg" alt="かぼちゃのクッキー - ¥250" width="2048" height="2048">
-                                <p>かぼちゃのクッキーＭ <br> ¥250<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/dog-foods/purple-sweet-potato-cookies.jpg" alt="むらさきいものクッキー - ¥280" width="2048" height="2048">
-                                <p>紫芋のクッキー <br> ¥280<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/dog-foods/pork-jerky.jpg" alt="ポークジャーキー - ¥350" width="2048" height="2048">
-                                <p>ポークジャーキー <br> ¥350<br>アレルギー情報: なし</p>
-                            </div>
-                            <div class="item">
-                                <img src="img/dog-foods/wild-boar-jerky.jpg" alt="いのしし肉のジャーキー - ¥400" width="2048" height="2048">
-                                <p>猪肉のジャーキー <br> ¥400<br>アレルギー情報: なし</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+        <ul class="tab">
+          <li><a href="#drink">Drink</a></li>
+          <li><a href="#foods">Foods</a></li>
+          <li><a href="#dog">Dog</a></li>
+        </ul>
+        <!-- ドリンクメニュー -->
+        <div class="tab__content">
+          <div id="drink" class="area is-active">
+            <div class="drinkwrap">
+              <h2>Drink</h2>
+              <div class="stamp-cupdeco"></div>
+              <div class="menu__drink--item">
+                <div class="item">
+                  <img
+                    src="img/drink/regullar-coffee.jpg"
+                    alt="レギュラーコーヒー - ¥400"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>レギュラーコーヒー</strong>
+                    <br />¥400<br />アレルギー情報: なし
+                  </p>
                 </div>
-        
-    </section>
-        
-
-
-    <!-- //////////////////////////////////////////////コンセプトページ メインセクション////////////////////////////////////////////// -->
-    <section id="concept" class="main__concept--sec">
-        <h2 class="section__title concept-adjust"><strong>Concept</strong></h2>
-        
-        <div class="main__concept--text">
-            <h3><strong>「犬と珈琲」</strong>では、</h3>
-            <p class="sub-text">
-                お客様に心地よい時間を提供し、<br>
-                <span class=" box fadeUpTrigger">愛犬と一緒に楽しめる空間</span>を目指しています。<br>
-                デカフェとカフェインレスの専門店であり、<br>
-                通常のコーヒーも提供することで<br>
-                すべてのお客様に満足いただけるカフェを目指します。
-            </p>
-            <h3><strong>特徴</strong></h3>
-            <p class="sub-text">
-                <span class=" box fadeUpTrigger">高品質なデカフェと通常のコーヒーを提供します</span><br>
-                カフェイン制限のあるすべてのひとに<br>
-                楽しんでもらえる環境を大切にしています。
-                
-            </p>
-            <h3><strong>設備</strong></h3>
-            <p class="sub-text">
-                <span class=" box fadeUpTrigger">子供たちが遊べる安全で楽しいスペース</span><br>
-                <span class=" box fadeUpTrigger">ビジネスミーティングやリモートワークに</span><br>
-                最適な快適なWi-Fi環境を完備<br>
-                <span class=" box fadeUpTrigger">静かな環境で読書やリラックスを楽しめるスペース</span><br>
-                犬が遊べる環境を提供。
-                
-            </p>
+                <div class="item">
+                  <img
+                    src="img/drink/cappuccino-coffee.jpg"
+                    alt="カプチーノ - ¥450"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>カプチーノ</strong> <br />¥450<br />アレルギー情報:
+                    乳成分
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/caramel-macchiato.jpg"
+                    alt="キャラメルマキアート - ¥500"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>キャラメルマキアート</strong>
+                    <br />¥500<br />アレルギー情報: 乳成分、大豆
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/cafe-mocha.jpg"
+                    alt="カフェモカ - ¥480"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>カフェモカ</strong> <br />¥480<br />アレルギー情報:
+                    乳成分
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/coffee-float-dessert.jpg"
+                    alt="コーヒーフロート - ¥520"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>コーヒーフロート</strong>
+                    <br />¥520<br />アレルギー情報: 乳成分
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/matcha-latte-coffee.jpg"
+                    alt="抹茶ラテ - ¥450"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>抹茶ラテ</strong> <br />¥450<br />アレルギー情報:
+                    乳成分
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/orange-juice.jpg"
+                    alt="オレンジジュース - ¥300"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>オレンジジュース</strong>
+                    <br />¥300<br />アレルギー情報: なし
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/grapefruit-juice.jpg"
+                    alt="グレープフルーツジュース - ¥300"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>グレープフルーツジュース</strong>
+                    <br />¥300<br />アレルギー情報: なし
+                  </p>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/drink/apple-juice.jpg"
+                    alt="アップルジュース - ¥300"
+                    width="1024"
+                    height="1024"
+                  />
+                  <p>
+                    <strong>アップルジュース</strong>
+                    <br />¥300<br />アレルギー情報: なし
+                  </p>
+                </div>
+              </div>
             </div>
-            <ul class="slider">
-                <li><img src="img/gallary/dog-park-1.jpg" alt="広々とした芝生の上に犬がたっている。そんな広いドッグパークがあります" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-2.jpg" alt="柴犬が二匹、芝生の上を気持ちよさそうにあるいている。ストレスなく犬たちもあそべます" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-3.jpg" alt="我が家のようにねころんでいる柴犬。ひなたぼっこで気持ちよさそう" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-4.jpg" alt="ドックパーク内にあるウッドデッキであそぶ犬たち。とてもいい表情をしています" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-7.jpg" alt="あそぶ犬たち。とてもいい表情をしています" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-5.jpg" alt="外からみるカフェの建物と芝生のうつった写真。光が差し込み、すごくきれいに輝いています" width="512" height="512"></li>
-                <li><img src="img/gallary/dog-park-6.jpg" alt="屋外にも喫茶スペースがあり、とても気持ちよい時間がすごせるスペースがあります" width="512" height="512"></li>
-                <li><img src="img/gallary/kids-area.jpg" alt="屋内には子供たちが安心して遊べる場所も設置しています。喫茶スペースも近くにあるので安心して珈琲を楽しめます" width="512" height="512"></li>
-                <!-- <li><img src="img/gallary/book-area.jpg" alt="図書館のような一室の写真。読書ができるスペースがあり、長時間の滞在も問題ございません" width="512" height="512"></li> -->
-            </ul><!--/slider-->
-        </section>
-        <div class="parallax"></div>
-        <section id="information" class="main__information--sec">
-            <h2 class="section__title"><strong>Hours & Location</strong></h2> 
-                <div class="main__information--inner">
-                       <div class="business__hour">
-                            <div class="business__hour--day">
-                                <p><strong>営業時間</strong><br>平日,日曜日: 10:00 - 20:00<br>土曜日: 10:00 - 22:00</p>
-                                <p><strong>定休日:</strong>毎週月曜日, 祝日</p>
-                            </div>
-                            <div class="business__address">
-                                <p><strong>住所</strong><br>
-                                    <span class="google-map">福岡県行橋市中央</span>
-                                    <a class="address__google" href="https://www.google.com/maps/place/福岡県行橋市中央" target="_blank">
-                                        <br>Google-map</a><br>
-                                    </p>
-                                    
-                                    <p><strong>お問い合わせ</strong><br>☎
-                                        <a class="telephone" href="tel:0123456789">012-345-6789</a>
-                                    </p>
-                            </div>
-                            </div>
-                            
-                            <!-- Calendar Js -->
-                             <div class="parallax"></div>
-                            <div id="event"></div>
-                            <h2 class="calender-coment"><strong>Event</strong></h2>
-                       <div class="calendar" id='calendar'></div>
-                       
-                </div>
-        </section> 
-<!--///////////////////////////////////////// コンタクトフォーム お問い合わせ /////////////////////////////////////////-->
-    <section id="contact" class="main__contact--sec">
+            <!--/area-->
+          </div>
+          <div id="foods" class="area">
+            <div class="stamp-foodsdeco"></div>
+            <h2>Foods</h2>
+            <div class="menu__foods--item">
+              <div class="item">
+                <img
+                  src="img/foods/curry-rice.jpg"
+                  alt="カレーライス - ¥700"
+                  width="1024"
+                  height="1024"
+                />
+                <p>カレーライス <br />¥700<br />アレルギー情報: なし</p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/carbonara-pasta.jpg"
+                  alt="カルボナーラ - ¥800"
+                  width="1024"
+                  height="1024"
+                />
+                <p>カルボナーラ <br />¥800<br />アレルギー情報: 乳成分、小麦</p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/bagel-sandwich.jpg"
+                  alt="ベーグルサンド - ¥600"
+                  width="2048"
+                  height="2048"
+                />
+                <p>ベーグルサンド <br />¥600<br />アレルギー情報: 小麦</p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/croissant-bread.jpg"
+                  alt="クロワッサン - ¥400"
+                  width="2048"
+                  height="2048"
+                />
+                <p>クロワッサン <br />¥400<br />アレルギー情報: 小麦、乳成分</p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/salada-roll-bread.jpg"
+                  alt="サラダロールブレッド - ¥500"
+                  width="2048"
+                  height="2048"
+                />
+                <p>サラダロールブレッド <br />¥500<br />アレルギー情報: 小麦</p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/salad-roll-bread-blue-cheese.jpg"
+                  alt="サラダロールブルーチーズブレッド - ¥550"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  サラダブルーチーズブレッド <br />¥550<br />アレルギー情報:
+                  小麦、乳成分
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/salada-roll-bread-cheese.jpg"
+                  alt="サラダロールチーズブレッド - ¥530"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  サラダチーズブレッド <br />¥530<br />アレルギー情報:
+                  小麦、乳成分
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/fruit-vegetable-salad.jpg"
+                  alt="フルーツベジタブルサラダ - ¥450"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  フルーツベジタブルサラダ <br />¥450<br />アレルギー情報: なし
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/foods/cheese-in-vegetable-salad.jpg"
+                  alt="チーズインサラダ - ¥480"
+                  width="2048"
+                  height="2048"
+                />
+                <p>チーズインサラダ <br />¥480<br />アレルギー情報: 乳成分</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="dog" class="area">
+            <h2>Dog-foods</h2>
+            <div class="menu__dog--item">
+              <div class="stamp-dogstampdeco"></div>
+              <div class="item">
+                <img
+                  src="img/dog-foods/large-pumpkin-cookie.jpg"
+                  alt="大きいかぼちゃのクッキー - ¥300"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  かぼちゃのクッキーＬ <br />
+                  ¥300<br />アレルギー情報: なし
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/dog-foods/medium-pumpkin-cookies.jpg"
+                  alt="かぼちゃのクッキー - ¥250"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  かぼちゃのクッキーＭ <br />
+                  ¥250<br />アレルギー情報: なし
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/dog-foods/purple-sweet-potato-cookies.jpg"
+                  alt="むらさきいものクッキー - ¥280"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  紫芋のクッキー <br />
+                  ¥280<br />アレルギー情報: なし
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/dog-foods/pork-jerky.jpg"
+                  alt="ポークジャーキー - ¥350"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  ポークジャーキー <br />
+                  ¥350<br />アレルギー情報: なし
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="img/dog-foods/wild-boar-jerky.jpg"
+                  alt="いのしし肉のジャーキー - ¥400"
+                  width="2048"
+                  height="2048"
+                />
+                <p>
+                  猪肉のジャーキー <br />
+                  ¥400<br />アレルギー情報: なし
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- //////////////////////////////////////////////コンセプトページ メインセクション////////////////////////////////////////////// -->
+      <section id="concept" class="main__concept--sec">
+        <h2 class="section__title concept-adjust"><strong>Concept</strong></h2>
+
+        <div class="main__concept--text">
+          <h3><strong>「犬と珈琲」</strong>では、</h3>
+          <p class="sub-text">
+            お客様に心地よい時間を提供し、<br />
+            <span class="box fadeUpTrigger">愛犬と一緒に楽しめる空間</span
+            >を目指しています。<br />
+            デカフェとカフェインレスの専門店であり、<br />
+            通常のコーヒーも提供することで<br />
+            すべてのお客様に満足いただけるカフェを目指します。
+          </p>
+          <h3><strong>特徴</strong></h3>
+          <p class="sub-text">
+            <span class="box fadeUpTrigger"
+              >高品質なデカフェと通常のコーヒーを提供します</span
+            ><br />
+            カフェイン制限のあるすべてのひとに<br />
+            楽しんでもらえる環境を大切にしています。
+          </p>
+          <h3><strong>設備</strong></h3>
+          <p class="sub-text">
+            <span class="box fadeUpTrigger"
+              >子供たちが遊べる安全で楽しいスペース</span
+            ><br />
+            <span class="box fadeUpTrigger"
+              >ビジネスミーティングやリモートワークに</span
+            ><br />
+            最適な快適なWi-Fi環境を完備<br />
+            <span class="box fadeUpTrigger"
+              >静かな環境で読書やリラックスを楽しめるスペース</span
+            ><br />
+            犬が遊べる環境を提供。
+          </p>
+        </div>
+        <ul class="slider">
+          <li>
+            <img
+              src="img/gallary/dog-park-1.jpg"
+              alt="広々とした芝生の上に犬がたっている。そんな広いドッグパークがあります"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-2.jpg"
+              alt="柴犬が二匹、芝生の上を気持ちよさそうにあるいている。ストレスなく犬たちもあそべます"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-3.jpg"
+              alt="我が家のようにねころんでいる柴犬。ひなたぼっこで気持ちよさそう"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-4.jpg"
+              alt="ドックパーク内にあるウッドデッキであそぶ犬たち。とてもいい表情をしています"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-7.jpg"
+              alt="あそぶ犬たち。とてもいい表情をしています"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-5.jpg"
+              alt="外からみるカフェの建物と芝生のうつった写真。光が差し込み、すごくきれいに輝いています"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/dog-park-6.jpg"
+              alt="屋外にも喫茶スペースがあり、とても気持ちよい時間がすごせるスペースがあります"
+              width="512"
+              height="512"
+            />
+          </li>
+          <li>
+            <img
+              src="img/gallary/kids-area.jpg"
+              alt="屋内には子供たちが安心して遊べる場所も設置しています。喫茶スペースも近くにあるので安心して珈琲を楽しめます"
+              width="512"
+              height="512"
+            />
+          </li>
+        </ul>
+        <!--/slider-->
+      </section>
+      <div class="parallax"></div>
+      <section id="information" class="main__information--sec">
+        <h2 class="section__title"><strong>Hours & Location</strong></h2>
+        <div class="main__information--inner">
+          <div class="business__hour">
+            <div class="business__hour--day">
+              <p>
+                <strong>営業時間</strong><br />平日,日曜日: 10:00 - 20:00<br />土曜日:
+                10:00 - 22:00
+              </p>
+              <p><strong>定休日:</strong>毎週月曜日, 祝日</p>
+            </div>
+            <div class="business__address">
+              <p>
+                <strong>住所</strong><br />
+                <span class="google-map">福岡県行橋市中央</span>
+                <a
+                  class="address__google"
+                  href="https://www.google.com/maps/place/福岡県行橋市中央"
+                  target="_blank"
+                >
+                  <br />Google-map</a
+                ><br />
+              </p>
+
+              <p>
+                <strong>お問い合わせ</strong><br />☎
+                <a class="telephone" href="tel:0123456789">012-345-6789</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Calendar Js -->
+          <div class="parallax"></div>
+          <div id="event"></div>
+          <h2 class="calender-coment"><strong>Event</strong></h2>
+          <div class="calendar" id="calendar"></div>
+        </div>
+      </section>
+      <!--///////////////////////////////////////// コンタクトフォーム お問い合わせ /////////////////////////////////////////-->
+      <section id="contact" class="main__contact--sec">
         <h2 class="section__title"><strong>Contact</strong></h2>
         <form id="contactForm">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="last-name">姓<span class="contact-important">必須</span></label>
-                    <input type="text" id="last-name" name="last-name" placeholder="姓を入力" required>
-                </div>
-                <div class="form-group">
-                    <label for="first-name">名<span class="contact-important">必須</span></label>
-                    <input type="text" id="first-name" name="first-name" placeholder="名を入力" required>
-                </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="last-name"
+                >姓<span class="contact-important">必須</span></label
+              >
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="姓を入力"
+                required
+              />
             </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email">e-mail<span class="contact-important">必須</span></label>
-                    <input type="email" id="email" name="email" placeholder="メールアドレスを入力" required>
-                </div>
+            <div class="form-group">
+              <label for="first-name"
+                >名<span class="contact-important">必須</span></label
+              >
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="名を入力"
+                required
+              />
             </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="comments">お問い合わせ内容<span class="contact-important">必須</span></label>
-                    <textarea id="comments" name="comments" placeholder="お問い合わせ内容を入力"></textarea>
-                </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email"
+                >e-mail<span class="contact-important">必須</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="メールアドレスを入力"
+                required
+              />
             </div>
-            <input type="button" class="submit" value="確認" onclick="showModal()">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="comments"
+                >お問い合わせ内容<span class="contact-important"
+                  >必須</span
+                ></label
+              >
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="お問い合わせ内容を入力"
+              ></textarea>
+            </div>
+          </div>
+          <input
+            type="button"
+            class="submit"
+            value="確認"
+            onclick="showModal()"
+          />
         </form>
-    </section>
-    
-        <!-- モーダルウィンドウ -->
-        <div id="confirmationModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>入力内容の確認</h2>
-                <p id="modalLastName"></p>
-                <p id="modalFirstName"></p>
-                <p id="modalEmail"></p>
-                <p id="modalComments"></p>
-                <button onclick="submitForm()">送信</button>
-            </div>
+      </section>
+
+      <!-- モーダルウィンドウ -->
+      <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>入力内容の確認</h2>
+          <p id="modalLastName"></p>
+          <p id="modalFirstName"></p>
+          <p id="modalEmail"></p>
+          <p id="modalComments"></p>
+          <button onclick="submitForm()">送信</button>
         </div>
-</main>
-<footer>
-    <a href="#" class="back-to-top">トップへ戻る</a>
-    <div class="sosial__links">
+      </div>
+    </main>
+    <footer>
+      <a href="#" class="back-to-top">トップへ戻る</a>
+      <div class="sosial__links">
         <a href="https://instagram.com" target="_blank">
-            <img src="img/icon/Instagram_Glyph_Black.svg" alt="instagram" width="1000" height="1000">
+          <img
+            src="img/icon/Instagram_Glyph_Black.svg"
+            alt="instagram"
+            width="1000"
+            height="1000"
+          />
         </a>
         <a href="https://line.com" target="_blank">
-            <img src="img/icon/LINE_Brand_icon.webp" alt="line" width="1001" height="1000">
+          <img
+            src="img/icon/LINE_Brand_icon.webp"
+            alt="line"
+            width="1001"
+            height="1000"
+          />
         </a>
         <a href="https://x.com" target="_blank">
-            <img src="img/icon/logo-black.webp" alt="x" width="2400" height="2453">
+          <img
+            src="img/icon/logo-black.webp"
+            alt="x"
+            width="2400"
+            height="2453"
+          />
         </a>
-
-    </div>
-    <div class="copyright">
-            <p>&copy; 2024 犬と珈琲.All Right Reserved.</p>
-    </div>
-    <div class="privacy-policy">
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 犬と珈琲.All Right Reserved.</p>
+      </div>
+      <div class="privacy-policy">
         <a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>|
         <a href="terms-of-service.html" target="_blank">利用規約</a>
-    </div>
-</footer>
-    <!--///////////////////////////////////////////// jQuery //////////////////////////////////////////-->  
-      <!--jQuery js  -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>  
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.6.0/vegas.min.js" integrity="sha512-uOfjbJAFkZh3u1rr5UVKy3/SqJ+JSLzv28/8lgMSdeofAoHaOLA5Hdr/oZ/IEPaOthxjHDa/z9Ng4Th3ClNT5A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>    
-    <!-- Slick Carousel を追加 -->    
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    
-    <!-- カスタムJS・一部修正 -->    
-    <script src="js/6-1-3.js" defer></script>    
-    <script src="js/5-4-1.js" defer></script>    
+      </div>
+    </footer>
+    <!--///////////////////////////////////////////// jQuery //////////////////////////////////////////-->
+    <!--jQuery js  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.6.0/vegas.min.js"
+      integrity="sha512-uOfjbJAFkZh3u1rr5UVKy3/SqJ+JSLzv28/8lgMSdeofAoHaOLA5Hdr/oZ/IEPaOthxjHDa/z9Ng4Th3ClNT5A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!-- Slick Carousel を追加 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
+
+    <!-- カスタムJS・一部修正 -->
+    <script src="js/6-1-3.js" defer></script>
+    <script src="js/5-4-1.js" defer></script>
     <script src="js/6-1-6.js" defer></script>
     <script src="js/calendar.js" defer></script>
     <script src="js/showmodal.js" defer></script>
     <!--scroll js 止まる場所の調整  -->
-    <script src="js/next_section_scroll.js" defer></script> 
-    <script src="js/3-2-3-1.js" defer></script>   
-
-
-
-    
-</body>
+    <script src="js/next_section_scroll.js" defer></script>
+    <script src="js/3-2-3-1.js" defer></script>
+  </body>
 </html>
